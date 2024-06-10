@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 自助拼车系统</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">拼车系统</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="mytrip.html">我的行程</a></li>
+                <li><a href="publish.html">发布行程</a></li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login">
+            <h2>登录</h2>
+            <form id="loginForm">
+                <label for="phoneNumber">手机号:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="submit">登录</button>
+            </form>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+            <script src="../scripts/login.js"></script>
+            <div class="social-login">
+                <p>使用社交账号登录:</p>
+                <button>微信登录</button>
+                <button>支付宝登录</button>
+                <button>QQ登录</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Powered by Myprefer.</p>
+        <nav>
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">用户协议</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

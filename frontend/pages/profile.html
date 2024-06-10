@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 自助拼车系统</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">拼车系统</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="mytrip.html">我的行程</a></li>
+                <li><a href="publish.html">发布行程</a></li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <h2>个人中心</h2>
+            <div class="user-info">
+                <h3>基本信息</h3>
+                <p>姓名: <span id="name"></span></p>
+                <p>电话号码: <span id="phoneNumber"></span></p>
+            </div>
+            <div class="appointment-records">
+                <h3>预约记录</h3>
+                <ul id="appointmentRecords">
+                    <!-- 预约记录将动态加载到这里 -->
+                </ul>
+            </div>
+            <div class="trip-records">
+                <h3>行程发布记录</h3>
+                <ul id="tripRecords">
+                    <!-- 行程发布记录将动态加载到这里 -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 自助拼车系统. 保留所有权利.</p>
+        <nav>
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">用户协议</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

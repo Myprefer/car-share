@@ -1,0 +1,7 @@
+passlib==1.7.4
+jose==1.0.0
+fastapi==0.111.0
+PyYAML==6.0.1
+SQLAlchemy==2.0.30
+pydantic==2.7.3
+PyMySQL==1.1.1

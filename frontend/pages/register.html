@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 自助拼车系统</title>
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">拼车系统</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="mytrip.html">我的行程</a></li>
+                <li><a href="publish.html">发布行程</a></li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="register">
+            <h2>注册</h2>
+            <form id="registerForm">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phoneNumber">手机号:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">确认密码:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <button type="submit" class="submit">注册</button>
+            </form>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+            <script src="../scripts/register.js"></script>
+            <div class="social-login">
+                <p>使用社交账号注册:</p>
+                <button>微信注册</button>
+                <button>支付宝注册</button>
+                <button>QQ注册</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 自助拼车系统. 保留所有权利.</p>
+        <nav>
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">用户协议</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

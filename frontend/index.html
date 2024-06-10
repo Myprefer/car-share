@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自助拼车系统</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<header>
+    <div class="logo">拼车系统</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="pages/mytrip.html">我的行程</a></li>
+            <li><a href="pages/publish.html">发布行程</a></li>
+            <li><a href="pages/login.html">登录</a></li>
+            <li><a href="pages/register.html">注册</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <h1>欢迎使用自助拼车系统</h1>
+        <form class="search-form" id="search-form">
+            <input type="text" id="departure" placeholder="出发地" required>
+            <input type="text" id="destination" placeholder="目的地" required>
+            <input type="date" id="date" required>
+            <button type="submit">搜索拼车</button>
+        </form>
+    </section>
+    <section class="recommended-trips">
+        <h2>可预约行程</h2>
+        <div class="trip-list" id="trip-list">
+            <!-- 行程卡片将由JavaScript生成 -->
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 自助拼车系统. 保留所有权利.</p>
+    <nav>
+        <ul>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">用户协议</a></li>
+        </ul>
+    </nav>
+</footer>
+<script src="scripts/index.js"></script>
+<script src="scripts/book.js"></script>
+
+</body>
+</html>

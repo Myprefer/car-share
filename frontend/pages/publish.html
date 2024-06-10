@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布行程 - 自助拼车系统</title>
+    <link rel="stylesheet" href="../styles/publish.css">
+</head>
+<body>
+<header>
+    <div class="logo">拼车系统</div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="mytrip.html">我的行程</a></li>
+            <li><a href="publish.html">发布行程</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="publish-trip">
+        <h2>发布行程</h2>
+        <form id="publishForm">
+            <label for="departure">出发地:</label>
+            <input type="text" id="departure" name="departure" required>
+
+            <label for="destination">目的地:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="stops">途经点:</label>
+            <input type="text" id="stops" name="stops">
+
+            <label for="date">日 期:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">时 间:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="seats">空座位数量:</label>
+            <input type="number" id="seats" name="seats" required>
+
+            <label for="price">价 格(元):</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="notes">备 注:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit" class="submit">发 布</button>
+        </form>
+        <script src="../scripts/publish.js"></script>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 自助拼车系统. 保留所有权利.</p>
+    <nav>
+        <ul>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">用户协议</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
