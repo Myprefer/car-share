@@ -1,4 +1,4 @@
-![image](https://github.com/Myprefer/car-share/assets/144575268/ce7d77de-784c-4511-b0f4-40b851c489da)<p align="center">
+<p align="center">
   <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/96/external-readme-is-a-easy-to-build-a-developer-hub-that-adapts-to-the-user-logo-regular-tal-revivo.png" width="100" />
 </p>
 <p align="center">
@@ -211,7 +211,7 @@ cd car-share
 3. Install the dependencies:
 
 ```sh
-> INSERT-INSTALL-COMMANDS
+> pip install -r requirements.txt
 ```
 
 ###  Running car-share
@@ -219,24 +219,8 @@ cd car-share
 Use the following command to run car-share:
 
 ```sh
-> INSERT-RUN-COMMANDS
+> python -m uvicorn main:app --reload
 ```
-
-###  Tests
-
-To execute tests, run:
-
-```sh
-> INSERT-TEST-COMMANDS
-```
-
----
-
-##  Project Roadmap
-
-- [x] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
 
 ---
 
